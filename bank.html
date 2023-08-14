@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome To Your Account</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+
+    <!-- heading title -->
+    <section class="text-center mb-14">
+        <h1 class="text-6xl font-bold mt-9">Welcome To Your <span class="text-purple-400">Account</span>!!!!</h1>
+    </section>
+
+  
+
+    <!-- account status section start   -->
+    <section class="max-w-screen-xl m-auto grid grid-cols-3 gap-4 text-white">
+        <!-- deposit -->
+        <div class="bg-[#1cc86c] px-10 py-16">
+            <p class="text-3xl font-semibold">Deposit</p>
+            <p class="text-5xl font-bold" >$<span id="deposit-amount">00</span></p>
+        </div>
+        <!-- Withdrawal -->
+        <div class="bg-[#f56565] px-10 py-16">
+            <p class="text-3xl font-semibold">Withdrawal</p>
+            <p class="text-5xl font-bold" >$<span id="withdraw-ammount">00</span></p>
+        </div>
+        <!-- Balance -->
+        <div class="bg-[#389fff] px-10 py-16">
+            <p class="text-3xl font-semibold">Balance</p>
+            <p class="text-5xl font-bold">$<span id="current-balance">1000</span></p>
+        </div>
+
+    </section>
+       <!-- account status section end -->
+
+       <!-- withdrawal & Deposit Section start -->
+       <section class="max-w-screen-xl m-auto grid grid-cols-2 gap-5  mt-40">
+        <!-- add money  -->
+        <div class="px-10 py-20 bg-purple-300 space-y-4 rounded-xl">
+            <p class="text-3xl font-semibold text-white">Enter Your Deposit Amount</p>
+            <input type="number"  id="deposit-input" placeholder="$ Amount you want to deposit" class="block p-3 w-3/4 rounded-lg">
+            <button class="text-xl bg-yellow-600 p-3 rounded-xl font-semibold  hover:bg-emerald-600 text-white" id="deposit-btn">DEPOSIT</button>
+        </div>
+        <div class="px-10 py-20 bg-blue-300 rounded-xl  space-y-4 ">
+            <p class="text-3xl font-semibold text-white" >Enter Your Withdrawal Amount</p>
+            <input type="number"  id="withdraw-input" placeholder="$ Amount you want to withdrawal" class="block p-3 w-3/4 rounded-lg">
+            <button class="text-xl bg-yellow-600 p-3 rounded-xl font-semibold hover:bg-red-600 text-white" id="withdraw-btn">WITHDRAWAL</button>
+        </div>
+
+       </section>
+        <!-- withdrawal & Deposit Section start -->
+    <script src="./depo.js"></script>
+    <script src="./withdraw.js"></script>
+</body>
+</html>
